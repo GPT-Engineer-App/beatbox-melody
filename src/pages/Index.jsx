@@ -16,7 +16,7 @@ const Index = () => {
       <Stack direction="row" spacing={8} overflowX="scroll" p={4}>
         {filteredAlbums.map((_, index) => (
           <Box key={index} bg="gray.700" borderRadius="lg" width="200px" p={4} color="white">
-            <Image src={`https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixid=${index}&crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.0.3&q=80&w=1080`} borderRadius="md" />
+            <Image src={`https://source.unsplash.com/random/200x200?sig=${index}`} borderRadius="md" />
             <Text mt={2} fontSize="lg">
               Album {index + 1}
             </Text>
