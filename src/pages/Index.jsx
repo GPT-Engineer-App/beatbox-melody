@@ -19,8 +19,11 @@ const Index = () => {
               Album {index + 1}
             </Text>
             <Text fontSize="sm">Artist {index + 1}</Text>
-            <Button leftIcon={<FaPlay />} mt={2} colorScheme="pink">
+            <Button leftIcon={<FaPlay />} mt={2} colorScheme="pink" mr={2}>
               Play
+            </Button>
+            <Button leftIcon={<FaHeart />} colorScheme="red" size="sm">
+              Favorite
             </Button>
           </Box>
         ))}
