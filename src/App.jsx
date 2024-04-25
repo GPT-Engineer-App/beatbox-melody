@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <Box as="main" p={4} bg="gray.900">
+      <Box as="main" p={4}>
         <Routes>
           <Route exact path="/" element={<Index />} />
           <Route path="/register" element={<Register />} />
