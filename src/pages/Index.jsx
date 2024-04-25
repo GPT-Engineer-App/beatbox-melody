@@ -4,7 +4,7 @@ import { FaPlay, FaPause, FaSearch, FaHeart } from "react-icons/fa";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const filteredAlbums = Array.from({ length: 5 })
+  const filteredAlbums = Array.from({ length: 10 })
     .map((_, index) => `Album ${index + 1}`)
     .filter((albumName) => albumName.toLowerCase().includes(searchQuery.toLowerCase()));
   return (
