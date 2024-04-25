@@ -4,9 +4,18 @@ import { FaPlay, FaPause, FaSearch, FaHeart } from "react-icons/fa";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const filteredAlbums = Array.from({ length: 10 })
-    .map((_, index) => `Album ${index + 1}`)
-    .filter((albumName) => albumName.toLowerCase().includes(searchQuery.toLowerCase()));
+  const filteredAlbums = [
+    "Eternal Echoes",
+    "Rhythms of Nature",
+    "Urban Dreams",
+    "Classical Moods",
+    "Jazz in the Park",
+    "Rock Legends",
+    "Electronic Waves",
+    "Pop Hits",
+    "Folk Stories",
+    "Blues Night"
+  ].filter((albumName) => albumName.toLowerCase().includes(searchQuery.toLowerCase()));
   return (
     <Container maxW="container.xl">
       <Flex justifyContent="space-between" alignItems="center" py={4}>
